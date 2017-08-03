@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,800|Roboto:300,400,700');
+font-face {
+  src: url('fonts/a_AvanteInt Book.ttf');
+  font-family: 'AvanteInt';
+}
+body {
+  margin: 0;
+}
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin: auto;
+  background: #0e51a9;
+}
+header .header-content {
+  padding: 13px 0;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+}
+header .header-content .header-telephone-box {
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 17px;
+}
+header .header-content .header-telephone-box span {
+  margin: 0 12px;
+}
+header .header-content .header-page-links a {
+  color: #ffde00;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 15px;
+}
+header .header-content .header-page-links a:first-child {
+  margin-left: 25px;
+}
+header .header-content .header-page-links a:last-child {
+  margin-right: 50px;
+}
+header .header-content .header-3d-tour {
+  width: 294px;
+  height: 47px;
+  background: #ffde00;
+  border-radius: 40px;
+  border: none;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 14.5px;
+  text-transform: uppercase;
+  line-height: 47px;
+}
+header .header-content .header-3d-tour a {
+  text-decoration: none;
+  color: black;
+}
+header .header-content .header-change-language select {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: white;
+  margin: 17px 0;
+  margin-left: 10px;
+}
+header .header-content .header-change-language select:focus {
+  outline: none;
+}
+footer {
+  max-width: 1920px;
+  margin: auto;
+  background: #0e51a9;
+}
+footer .footer-content {
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .form-block {
+  padding-top: 130px;
+  max-width: 602px;
+  outline: none;
+  padding-bottom: 144px;
+}
+footer .footer-content .form-block p {
+  font-size: 20px;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  width: 280px;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+footer .footer-content .form-block input:not([type = 'submit']) {
+  width: 93%;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: black;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 21px;
+}
+footer .footer-content .form-block textarea {
+  padding: 21px;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  width: 93%;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+footer .footer-content .form-block [type='submit'] {
+  width: 300px;
+  height: 47px;
+  background: #ffde00;
+  border-radius: 40px;
+  border: none;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 44px;
+}
+footer .footer-content .form-block [type='submit'] a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-content .map-block {
+  padding-top: 94px;
+  max-width: 682px;
+}
+footer .footer-content .map-block p {
+  font-size: 20px;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+footer .footer-content .map-block #map {
+  margin-top: 40px;
+  height: 400px;
+  width: 100%;
+}
+#section0 {
+  background: url('золоче_3.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover!important;
+  background-position-y: 80px!important;
+}
+#section1 .slide {
+  text-align: center;
+}
+#section1 .intro {
+  max-width: 1366px;
+  margin: auto;
+  text-align: center;
+}
+#section1 h1 {
+  font-size: 100px;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  text-align: center;
+}
+#section1 img {
+  width: 40%;
+}
+#section2 {
+  background-image: url('stock-photo-ten-year-old-boy-go-hiking-with-backpack-and-binocular-exploring-the-world-summer-holidays-663605182.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section2 p {
+  font-size: 100px;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 800;
+  text-align: center;
+  margin-left: -510px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}

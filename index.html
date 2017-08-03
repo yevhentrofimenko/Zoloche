@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/scrolloverflow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class = 'header-telephone-box'>
+            <p>Телефоны:
+                <span>095 686 89 67,</span>
+                <span>095 686 89 67</span>
+            </p>
+        </div>
+        <div class="header-logo">
+
+        </div>
+        <div class="header-page-links">
+            <p>
+                <a href="#firstPage">школа</a>
+                <a href="#secondPage">детский сад</a>
+                <a href="#3rdPage">летний лагерь</a>
+                <a href="#">кружки</a>
+                <a href="#">галерея</a>
+            </p>
+        </div>
+        <div class = 'header-3d-tour'>
+                <a href="#">3d тур по школе</a>
+        </div>
+        <div class="header-change-language">
+           <select>
+               <option>RU</option>
+               <option>UA</option>
+               <option>EN</option>
+           </select>
+        </div>
+    </div>
+</header>
+
+<div id="fullpage">
+    <div class="section " id="section0">
+        <div class="intro">
+        </div>
+    </div>
+    <div class="section" id="section1">
+        <div class="slide" id="slide1">
+            <div class="intro">
+                <h1>Slider example</h1>
+            </div>
+        </div>
+
+        <div class="slide" id="slide2">
+            <h1>Slide 2</h1>
+            <img src="2136.png" alt="photo" id="photo" />
+        </div>
+
+    </div>
+    <div class="section" id="section2">
+        <p>Third page</p>
+    </div>
+    <footer class="section" id="section3">
+        <div class="footer-content">
+            <div class="form-block">
+                <p>Если у вас остались вопросы, напишите нам или звоните</p>
+                <form id = 'usrform'>
+                    <input type="text" name = 'name' placeholder="Имя">
+                    <input type="text' name = 'telephone" placeholder="Телефон">
+                    <input type ='text' name = 'email' placeholder="Email">
+                    <textarea rows="3" cols="50" name="comment" form="usrform" placeholder="Ваш вопрос"></textarea>
+                    <input type="submit" name = 'submit'>
+                </form>
+            </div>
+            <div class="map-block">
+                <p>+38(067) 402 14 07</p>
+                <p>с. Вишенки, Бориспольский район, ул. Набережная, 28</p>
+                <div id = 'map'></div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+
+<script>
+    var map;
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 50.467277, lng: 30.5079673},
+            zoom: 16,
+            scrollwheel:false
+        });
+
+        var marker1 = new google.maps.Marker({
+            position: {lat: 50.467277, lng: 30.5079673},
+            map: map,
+            title: 'Ldecor',
+        });
+
+        var infowindow1 = new google.maps.InfoWindow({
+            content: '<div class=infwin>Ldecor</div>'
+        });
+
+        marker1.addListener('click', function(e) {
+            map.setZoom(18);
+            map.setCenter(marker1.getPosition());
+            infowindow1.open(map, marker1);
+        });
+
+    };
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNW94-UziqOQOyYAI5cwtA7cCyqETyZOg&callback=initMap"></script>
+</html>
